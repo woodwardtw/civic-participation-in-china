@@ -20,15 +20,18 @@ defined( 'ABSPATH' ) || exit;
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
 	<div class="entry-content row">
-		<div class="col-md-8">
+		<div class="main-text col-md-7">
 			<?php
 			the_content();
 			?>
-		</div>
-
+		</div>		
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer row">
+			<div class="col-md-5 offset-md-7 freeze-it">
+				<div class="giant">CPCS</div>
+				<div class="tag-line">Civic Participation in China Survey</div>
+			</div>
 
 		<?php understrap_edit_post_link(); ?>
 
