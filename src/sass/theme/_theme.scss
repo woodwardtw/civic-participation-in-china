@@ -2,4 +2,21 @@
 
 body {
 	font-family: 'Noto Sans TC', sans-serif;
+	background-image: url(../imgs/bg.webp);
+	background-size: 50vw;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+h1, h2, h3, h4 {
+	color: $black;
+}
+
+h1 {
+	font-size: 3.4rem;
+}
+
+p {
+	font-size: 1.3rem;
+	margin-top: 20px;
 }

@@ -19,12 +19,12 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 
-	<div class="entry-content">
-
-		<?php
-		the_content();
-		understrap_link_pages();
-		?>
+	<div class="entry-content row">
+		<div class="col-md-8">
+			<?php
+			the_content();
+			?>
+		</div>
 
 	</div><!-- .entry-content -->
 
