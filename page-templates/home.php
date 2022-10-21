@@ -24,7 +24,7 @@ if ( is_front_page() ) {
 
 		<div class="row">
 
-			<div class="col-md-12 content-area" id="primary">
+			<div class="col-md-7 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
 
@@ -43,6 +43,12 @@ if ( is_front_page() ) {
 				</main><!-- #main -->
 
 			</div><!-- #primary -->
+			<div class="col-md-5 logo-land">
+				<div class="rotate">
+					<div class="giant">CPCS</div>
+				</div>
+				<div class="tag-line">Civic Participation in China Survey</div>
+			</div>
 
 		</div><!-- .row end -->
 

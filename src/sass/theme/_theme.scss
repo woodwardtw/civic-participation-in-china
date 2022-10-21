@@ -21,21 +21,32 @@ p {
 	margin-top: 20px;
 }
 
-.giant {
-	font-size: 8vw;
-	font-weight: 700;
-	color: $red;
-	// -webkit-transform: rotate(90deg);
- //    -moz-transform: rotate(90deg);
- //    -o-transform: rotate(90deg);
- //    -ms-transform: rotate(90deg);
- //    transform: rotate(90deg);
-}
-
-.freeze-it{
+.logo-land{
+	background-color: $red;
+	height: 100vh;
 	position: fixed;
-	bottom: 0;
+	top: 20px;
 	right: 0;
 	text-align: right;
 	padding: 50px;
+}
+
+// .rotate {
+// 	writing-mode: vertical-rl;
+// 	text-orientation: upright;
+// }
+
+.giant {
+	font-size: 12vw;
+	font-weight: 700;
+	color: #fff;	
+	text-align: center;
+	line-height: 1;
+}
+
+.tag-line {
+	font-size: 2rem;
+	text-align: center;
+	background-color: $yellow;
+	margin-top: 20px;
 }
