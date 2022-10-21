@@ -17089,6 +17089,7 @@ figure.woocommerce-product-gallery__wrapper {
 
 body {
   font-family: "Noto Sans TC", sans-serif;
+  background-color: #f0f8ff;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -17097,14 +17098,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 h1, .h1 {
   font-size: 3.4rem;
-  background-color: #EE1C25;
   padding: 5px 30px 5px 10px;
   display: inline-block;
-  color: #fff;
+  color: #35312e;
 }
 
 h2, .h2 {
-  background-color: #FFFF00;
   padding: 5px 30px 5px 10px;
   display: inline-block;
   margin-top: 25px;
@@ -17117,19 +17116,22 @@ p {
 }
 
 .logo-land {
-  background-color: #EE1C25;
   height: 100vh;
   position: fixed;
   top: 20px;
   right: 0;
   text-align: right;
   padding: 0;
+  background-image: url(../imgs/branch.svg);
+  background-size: 40vw;
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .giant {
   font-size: 12vw;
   font-weight: 700;
-  color: #fff;
+  color: #35312e;
   text-align: center;
   line-height: 1;
 }
@@ -17137,8 +17139,8 @@ p {
 .tag-line {
   font-size: 2rem;
   text-align: center;
-  background-color: #FFFF00;
   margin-top: 20px;
+  color: #35312e;
 }
 
 /*# sourceMappingURL=theme.css.map */
