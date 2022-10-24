@@ -17118,7 +17118,7 @@ p {
 .logo-land {
   height: 100vh;
   position: fixed;
-  top: 20px;
+  top: 90px;
   right: 0;
   text-align: right;
   padding: 0;
@@ -17141,6 +17141,21 @@ p {
   text-align: center;
   margin-top: 20px;
   color: #35312e;
+}
+
+#main-nav {
+  background-color: #f0f8ff;
+  width: 100%;
+  position: fixed;
+  z-index: 1200;
+}
+
+#main-menu {
+  background-color: #f0f8ff;
+}
+
+.wrapper {
+  padding: 8rem 0;
 }
 
 /*# sourceMappingURL=theme.css.map */
