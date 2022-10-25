@@ -44,3 +44,16 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+add_filter( 'the_title', 'rename_publications');
+
+function rename_publications($title){
+	global $post;
+	if(get_post_type($post->ID) == 'publication' && in_the_loop()){
+		$content = get_the_content($post->ID);
+		preg_match('/"(.+?)"|“(.+?)”/', $content, $new_title);
+		return $new_title[0];
+	} else {
+		return $title;
+	}
+}
