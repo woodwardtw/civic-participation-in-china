@@ -74,7 +74,7 @@ function create_publication_cpt() {
   global $wp_rewrite;
   $wp_rewrite->flush_rules();
 }
-add_action( 'init', 'create_publication_cpt', 0 );
+//add_action( 'init', 'create_publication_cpt', 0 );
 
 
 //member custom post type

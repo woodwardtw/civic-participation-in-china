@@ -26,6 +26,7 @@ $understrap_includes = array(
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.
 	'/editor.php',                          // Load Editor functions.
 	'/custom-data.php',                     // Custom data
+	'/acf.php',								//ACF
 	'/block-editor.php',                    // Load Block Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 );
@@ -43,17 +44,4 @@ if ( class_exists( 'Jetpack' ) ) {
 // Include files.
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
-}
-
-add_filter( 'the_title', 'rename_publications');
-
-function rename_publications($title){
-	global $post;
-	if(get_post_type($post->ID) == 'publication' && in_the_loop()){
-		$content = get_the_content($post->ID);
-		preg_match('/"(.+?)"|“(.+?)”/', $content, $new_title);
-		return $new_title[0];
-	} else {
-		return $title;
-	}
 }

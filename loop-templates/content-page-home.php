@@ -23,6 +23,7 @@ defined( 'ABSPATH' ) || exit;
 		
 			<?php
 			the_content();
+			echo cpcs_publications();
 			?>
 			
 	</div><!-- .entry-content -->
